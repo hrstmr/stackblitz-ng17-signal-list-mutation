@@ -1,0 +1,26 @@
+<h2>Cookie recipe</h2>
+
+<label>
+  # of cookies:
+  <input
+    type="range"
+    min="10"
+    max="100"
+    step="10"
+    [value]="count()"
+    (input)="update($event)"
+  />
+  {{ count() }}
+</label>
+
+<p>Butter: {{ butter() }} cup(s)</p>
+<p>Sugar: {{ sugar() }} cup(s)</p>
+<p>Flour: {{ flour() }} cup(s)</p>
+<p>someList: {{ someList() | json }} cup(s)</p>
+<p>sortRev: {{ sortRev() | json }} cup(s)</p>
+<p>sort: {{ sort() | json }} cup(s)</p>
+
+<h1>Hello from {{ name }}!</h1>
+<a target="_blank" href="https://angular.dev/overview">
+  Learn more about Angular
+</a>
